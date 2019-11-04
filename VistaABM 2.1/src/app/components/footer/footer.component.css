@@ -1,0 +1,13 @@
+.footer {
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  width: 81%;
+  margin-left: 19%;
+  z-index: 4000;
+  background-color: #272b2f;
+}
+
+.footer p {
+  margin-left: 6%;
+}

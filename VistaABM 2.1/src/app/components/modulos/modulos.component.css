@@ -1,0 +1,14 @@
+.myModulo{
+    margin-top: 6%;
+    float: right;
+    margin-left: 500px;
+    background-color: grey;
+    overflow-x:hidden;
+}
+table{
+    margin-left: 8%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+}

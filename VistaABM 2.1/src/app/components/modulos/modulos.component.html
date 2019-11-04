@@ -1,0 +1,33 @@
+<div class="container myModulo">
+  <table class="table" *ngIf="isDataLoaded">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Categoria</th>
+        <th scope="col">Semestre</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let modulo of misModulos; let i = index" class="bg-light">
+        
+        <td *ngIf="modulo.semestre == 'primero'">{{ modulo.nombre }}</td>
+        <td *ngIf="modulo.semestre == 'primero'">{{ modulo.categoria }}</td>
+        <td *ngIf="modulo.semestre == 'primero'">{{ modulo.semestre }}</td>
+      </tr>
+      <tr *ngFor="let modulo of misModulos; let i = index">
+
+        <td *ngIf="modulo.semestre == 'segundo'">{{ modulo.nombre }}</td>
+        <td *ngIf="modulo.semestre == 'segundo'">{{ modulo.categoria }}</td>
+        <td *ngIf="modulo.semestre == 'segundo'">{{ modulo.semestre }}</td>
+          
+      </tr>
+      <tr *ngFor="let modulo of misModulos; let i = index" class="bg-light">
+
+        <td *ngIf="modulo.semestre == 'tercero'">{{ modulo.nombre }}</td>
+        <td *ngIf="modulo.semestre == 'tercero'">{{ modulo.categoria }}</td>
+        <td *ngIf="modulo.semestre == 'tercero'">{{ modulo.semestre }}</td>        
+      </tr>
+    </tbody>
+  </table>
+</div>
+
